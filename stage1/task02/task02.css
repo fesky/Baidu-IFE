@@ -1,0 +1,56 @@
+/*网页主体*/
+body{
+	min-width: 800px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #dedede;
+}
+
+/*网页头部*/
+header.main_nav{
+	background-color: #333333;
+	background-image: url(logo.png);
+	background-position: left 40px top 10px;
+	background-repeat: no-repeat;
+	position:sticky;/*「sticky」就像是「relative」和「fixed」的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如「fixed」。*/
+/*	top: 0px; 如果上述position的值为fixed，需要写该条语句来消除header与页面顶部的空白。
+	margin: 0px;
+	padding: 0px;*/
+	width: 100%;
+	height: 60px;
+
+}
+
+header.main_nav h1{
+	display: none;
+}
+
+ul.nav_links{
+	position: absolute;
+	list-style-type: disc;/*该条语句只能写在元素ul里，写在li里无效。*/
+	margin: 0px;
+	padding: 0px;
+	right: 0px;/*如果将该条语句写在元素li里无效。*/
+}
+
+ul.nav_links li{
+	float: left;
+	margin: 20px;
+	padding: 0px;
+}
+
+/* ul.nav_links{
+	float: right;
+	right: 0px;
+}
+
+ul.nav_links li{
+	display: inline-block;
+
+} */
+ul.nav_links a{
+	text-decoration: none;
+	color: white;
+	display: block;
+
+}
