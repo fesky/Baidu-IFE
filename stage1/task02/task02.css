@@ -4,8 +4,17 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background-color: #dedede;
+	font-family: "Microsoft Yahei";
 }
 
+h2{
+	margin:0px;
+	padding:0px;
+}
+
+h3{
+	color:gray;
+}
 /*导航栏*/
 header.main_nav{
 	background-color: #333333;
@@ -22,12 +31,11 @@ header.main_nav h1{
 	display: none;/*h1在文档流占用的空间将被释放出来*/
 }
 
-  ul.nav_links{
+ul.nav_links{
 	margin: 0px;
 	padding: 0px;
 	float: right;
 	width: 450px;
-
 } 
 
 ul.nav_links li{
@@ -40,3 +48,60 @@ ul.nav_links li{
 	text-decoration: none;
 	color: white;
 } 
+/*body*/
+.article, .aside{
+	margin: 20px;
+	background-color: white;
+	padding:40px 20px;
+}
+
+.aside{
+	padding: 22px 20px;
+}
+
+.aside h3{
+	color:black;
+}
+
+.author, .publish_time{
+	color: gray;
+}
+p{
+	text-indent: 2em;
+}
+
+.items{
+	list-style-type: none;
+}
+
+.picture{
+	border: 1px solid gray;
+	text-align: center;
+	width: 233px;
+	margin: 16px;
+	padding: 10px;
+
+}
+figcaption{
+	margin-bottom: 12px;
+}
+
+table, th, td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+
+}
+th{
+	background-color:#333333;
+}
+tfoot td{
+	background-color: gray;
+}
+table{
+	width: 100%;
+}
+
+/*侧栏*/
+form{
+	
+}
