@@ -103,5 +103,15 @@ table{
 
 /*侧栏*/
 form{
+	margin-left: 20%;
+}
+form div {
+	padding:10px;
+}
+.tips{
+	color:gray;
+	font-size: 14px;
+}
+input{
 	
 }
