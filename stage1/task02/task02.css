@@ -77,15 +77,18 @@ p{
 .picture{
 	border: 1px solid gray;
 	text-align: center;
-	width: 233px;
+	width: 121px;
+	height: 126px;
 	margin: 16px;
 	padding: 10px;
-
 }
 figcaption{
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 }
-
+.picture img{
+	width: 100px;
+	height: 100px;
+}
 table, th, td{
 	border: 1px solid gray;
 	border-collapse: collapse;
@@ -93,6 +96,7 @@ table, th, td{
 }
 th{
 	background-color:#333333;
+	color: white;
 }
 tfoot td{
 	background-color: gray;
@@ -102,19 +106,33 @@ table{
 }
 
 /*侧栏*/
-/*form{
-	margin-left: 20%;
-}*/
-form div {
+ form div {
 	padding:10px;
-}
+} 
 .tips{
 	color:gray;
 	font-size: 14px;
+	margin-left: 41%;
 }
-label{
+.label{
 	display: inline-block;
-	width:20%;
+	width:40%;
 	text-align: right;
-	
+	vertical-align: top;	
+}
+
+button{
+	background-color:#3355d0;
+	color: white;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 10px 10px;
+}
+footer{
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
 }
