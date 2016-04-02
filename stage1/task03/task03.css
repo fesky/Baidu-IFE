@@ -1,0 +1,117 @@
+/*方案1*/
+/* *{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	min-width: 100px;
+	font-family: "微软雅黑";
+	padding: 20px;
+}
+
+.content,.left,.middle,.right{
+	border: 1px solid #999;
+	padding: 20px;
+	background-color: white;
+}
+
+.content{
+	background-color: #eee;
+	width: 100%;
+}
+
+.left{
+	float: left;
+	width: 200px;
+}
+
+
+.right{
+	float: right;
+	width: 120px;
+}
+
+.middle{
+	margin-left: 220px;
+	margin-right: 140px;	
+	background-color: white;
+} 
+
+.filmName{
+	float: right;
+	width: 70px;
+	font-weight: bold;
+}
+ 
+.member{
+	padding-bottom: 20px;
+}
+ */
+
+
+/*方案2（该方案有问题：父边框的高度只能随中间内容区的高度变化）*/
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	min-width: 100px;
+	font-family: "微软雅黑";
+	padding: 20px;
+}
+
+.content,.left,.middle,.right{
+	border: 1px solid #999;
+	padding: 20px;
+	background-color: white;
+}
+
+.content{
+	background-color: #eee;
+	width: 100%;
+	position: relative;
+}
+
+.left{
+		display: inline-block;
+	position: relative;
+	margin: 0px;
+	width: 200px;
+
+}
+
+
+.right{
+		display: inline-block;
+	position: relative;
+	right: 20px;
+	width: 120px;
+
+}
+
+.middle{
+		display: inline-block;
+	position: relative;
+	margin-left: 220px;
+	margin-right: 140px;	
+	background-color: white;
+
+} 
+
+.filmName{
+	float: right;
+	width: 70px;
+	font-weight: bold;
+}
+ 
+.member{
+	padding-bottom: 20px;
+}
