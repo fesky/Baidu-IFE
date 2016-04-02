@@ -1,5 +1,5 @@
 /*方案1*/
-/* *{
+*{
 	margin: 0px;
 	padding: 0px;
 	-webkit-box-sizing: border-box;
@@ -24,11 +24,16 @@ body{
 	width: 100%;
 }
 
+.content:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .left{
 	float: left;
 	width: 200px;
 }
-
 
 .right{
 	float: right;
@@ -50,10 +55,10 @@ body{
 .member{
 	padding-bottom: 20px;
 }
- */
+ 
 
 
-/*方案2（该方案有问题：父边框的高度只能随中间内容区的高度变化）*/
+/* 方案2（该方案有问题：父边框的高度只能随中间内容区的高度变化）
 *{
 	margin: 0px;
 	padding: 0px;
@@ -81,29 +86,23 @@ body{
 }
 
 .left{
-		display: inline-block;
-	position: relative;
+	position: absolute;
 	margin: 0px;
 	width: 200px;
-
 }
 
 
 .right{
-		display: inline-block;
-	position: relative;
+	position: absolute;
 	right: 20px;
 	width: 120px;
-
 }
 
 .middle{
-		display: inline-block;
 	position: relative;
 	margin-left: 220px;
 	margin-right: 140px;	
 	background-color: white;
-
 } 
 
 .filmName{
@@ -115,3 +114,4 @@ body{
 .member{
 	padding-bottom: 20px;
 }
+ */
