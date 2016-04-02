@@ -22,15 +22,15 @@ body{
 .content{
 	background-color: #eee;
 	width: 100%;
-	overflow: auto;/*该条语句可改变content块框的高度，使得其包住溢出的浮动块。*/
-}
+	/*overflow: auto;该条语句可改变content块框的高度，使得其包住溢出的浮动块。*/
+} 
 /*也可以用以下方法代替overflow:auto，但当窗口调整到最窄时，效果会有些许不同;*/
-/*.content:after{
+.clearfix:after{
 	content: "";
 	display: block;
 	clear: both;
-}*/
-
+}
+ 
 .left{
 	float: left;
 	width: 200px;
