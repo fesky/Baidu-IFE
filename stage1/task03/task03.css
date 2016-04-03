@@ -1,4 +1,4 @@
-/*方案1*/
+ /*方案1*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -22,15 +22,14 @@ body{
 .content{
 	background-color: #eee;
 	width: 100%;
-	/*overflow: auto;*/
+	overflow: auto;/*该条语句可改变content块框的高度，使得其包住溢出的浮动块。*/
 }
-/*也可以用以下方法代替overflow:auto;*/
+/*也可以用以下方法代替overflow:auto，但当窗口调整到最窄时，效果会有些许不同;*/
 /*.content:after{
 	content: "";
 	display: block;
 	clear: both;
-}
-*/
+}*/
 
 .left{
 	float: left;
@@ -57,11 +56,11 @@ body{
 .member{
 	padding-bottom: 20px;
 }
- 
+  
 
 
-/* 方案2（该方案有问题：父边框的高度只能随中间内容区的高度变化）
-*{
+ /*方案2（该方案只能让content块框的高度随中间内容区的高度变化）*/
+/* *{
 	margin: 0px;
 	padding: 0px;
 	-webkit-box-sizing: border-box;
@@ -85,7 +84,14 @@ body{
 	background-color: #eee;
 	width: 100%;
 	position: relative;
+	overflow: auto;该语句可以将溢出content块框的position:absolute元素被装入content块框中，但content块框的高度由其包含的未产生浮动效果的position:relative元素决定。
 }
+.content:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+该语句只对使用float时有效，对使用position:absolute时无效
 
 .left{
 	position: absolute;
@@ -116,4 +122,4 @@ body{
 .member{
 	padding-bottom: 20px;
 }
- */
+  */
