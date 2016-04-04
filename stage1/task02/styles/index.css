@@ -1,6 +1,6 @@
 /*全局设置*/
 body{
-	min-width: 800px;
+	min-width: 1000px;
 	margin: 0px;
 	padding: 0px;
 	background-color: #dedede;
@@ -19,7 +19,7 @@ h3{
 /*导航栏*/
 header.navbar{
 	background-color: #333333;
-	background-image: url(logo.png);
+	background-image: url(../images/logo.png);
 	background-position: left 40px top 10px;
 	background-repeat: no-repeat;
 	margin: 0px;
@@ -81,13 +81,6 @@ figure{
 	height: 126px;
 	margin: 16px;
 	padding: 10px;
-	float: left;
-}
-
-.clearfix:after{
-	content: "";
-	display: block;
-	clear: both;
 }
 
 figcaption{
@@ -120,8 +113,6 @@ tfoot td{
 /*侧边栏*/
 aside{
 	padding: 22px 20px;
-	float: right;
-	width: 350px;
 }
 
 aside h3{
@@ -163,9 +154,4 @@ footer{
 	color: white;
 	padding: 20px;
 	text-align: center;
-}
-
-.articles{
-	margin-left: 0px;
-	margin-right: 410px;
 }
