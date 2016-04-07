@@ -1,0 +1,43 @@
+/*global*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Microsoft Yahei";
+	font-size: 16px;
+	width: 980px;
+	height: 1386px;
+	margin: auto;
+	padding:0px 44px; 
+}
+
+/*header*/	
+header{
+	position: relative;
+	border-bottom: 2px solid #938e8c;
+	width: 892px;
+	height: 63px;
+	font-size: 12px;
+	font-family: "SimHei";
+}
+
+.website{
+	position: absolute;
+	width: 110px;
+	height: 61px;
+	background-color: #d45d5c;
+	color: #ffffff;
+	padding: 46px 27px 0px 7px;
+}
+
+.datetime{
+	position: absolute;
+	right: 0px;
+	color: #d45d5c;
+	margin-top: 46px;
+}
